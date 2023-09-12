@@ -1,0 +1,6 @@
+This file and the directory it is in (dir2) were created to show that .gitignore can be used to exclude directories and files from the staging index when using the "include all" . 
+as such:
+
+git add .
+
+(this will add everything to staging index EXCEPT anything listed in .gitignore)
