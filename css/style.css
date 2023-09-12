@@ -1,0 +1,211 @@
+
+/************************* Sitewide ********************************************/
+:root {
+    --backgroundColor: #333;
+    --accentColor: #f7c08a;
+    --lightBackgroundColor: #444;
+    --foregroundColor: #f4f4f4;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height:1.7rem;
+    color:white;
+    text-align: center;
+}
+
+h1{
+    font-weight:bold;
+    font-size: 3rem;
+    padding: 20px;
+
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+    font-size: 1.3rem;
+    font-weight:bold;
+}
+p {
+    padding:30px;
+}
+
+em {
+    color: var(--accentColor);
+    font-style:normal;
+}
+
+a {
+    text-decoration: none;
+}
+/************************************ Utility Classes *************************************/
+
+.btn {
+  padding:20px;
+  font-size: .9rem;
+  border-radius: 3px;
+}
+
+.clrLightBackground {
+  background: var(--foregroundColor);
+  color: var(--backgroundColor);
+}
+.darkBackground, .darkBtn, .darkBtn:visited {
+    background: var(--backgroundColor);
+    color: var(--foregroundColor);
+}
+
+.clrAccentBackground, .btn:hover {
+    background: var(--accentColor);
+    color: var(--lightBackgroundColor);
+}
+
+
+main {
+    max-height: 2000vh;
+}
+
+
+/* *********************************  Header and Footer ***************************/
+
+/* Header formatting */
+header {
+    background: var(--backgroundColor);   
+}
+
+.headerContainer {
+    max-width:90%;
+    margin:auto;
+    overflow:auto;
+    padding:0px 30px;
+}
+
+
+.logo {
+    float:left;
+    color:white;
+    padding:20px 0px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+/* NavBar formatting */
+
+nav ul {
+    list-style-type: none;
+    float:right;
+}
+nav ul li {
+    padding:20px;
+    float:left;
+    color: var(--foregroundColor); 
+
+}
+nav ul li a {
+    color:inherit;  
+
+}
+
+nav ul li:hover,  .current {
+    background: var(--lightBackgroundColor);
+    color: var(--accentColor);
+}
+
+
+
+
+/* ********************************* Home Page  ***************************/
+/* Showcase */
+
+.showcase {
+    max-width: 100%;
+    height:90vh;
+    background: url(../img/showcase.jpg) top center/cover;
+    text-align:center;
+    padding-top:30vh;
+}
+
+.showcase p {
+    margin-bottom: 20px;
+}
+
+
+/* History */
+.history {
+    height: 75vh;
+    width:100vw;
+}
+
+.history img {
+    width: 49.5vw;
+    float:left;
+    height: 100%;
+}
+
+.history article {
+    display: block;
+    width: 49.4vw;
+    height: 100%;
+    float:left;
+    background: var(--backgroundColor);
+    padding:10vh 10px;
+}
+
+.history article p {
+    margin:20px;
+}
+/* Features */
+.features {
+    max-height: 60vh;
+    padding:10vh 30px;
+    width:32.85vw;
+    float:left;
+    font-size: 1.2rem;
+}
+
+/* footer */
+footer  {
+    float:left;
+    width:100vw;
+}
+
+
+
+/* ********************************* About Page  ***************************/
+
+.about {
+    width:100vw;
+    padding:20px;
+}
+
+.about article {
+    width: 50%;
+    float:left;
+    text-align: left;
+
+}
+
+.about article h2 {
+    margin:0px auto;
+}
+
+.about article p {
+    padding:0;
+}
+.about img {
+    width:35%;
+ 
+    border-radius: 50%;
+}
